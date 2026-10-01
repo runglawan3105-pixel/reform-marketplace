@@ -140,6 +140,31 @@ footer{background:#102f27;color:#dce9e3;padding:35px 7%;display:flex;justify-con
  .hero{grid-template-columns:1fr!important;padding:28px 20px!important}
  .hero-gallery{min-height:58vw!important;background-position:center!important}
 }
+
+/* v9: unified premium photography across homepage */
+.hero{gap:34px!important;grid-template-columns:minmax(500px,.80fr) minmax(800px,1.20fr)!important}
+.hero-gallery{min-height:590px!important;background-position:58% center!important}
+.photo-material{
+ background-image:linear-gradient(0deg,rgba(12,43,34,.12),rgba(12,43,34,.02)),url('hero-reform-new.png')!important;
+ background-size:410%!important;height:205px!important;
+}
+.photo-material.textile{background-position:56% 63%!important}
+.photo-material.wood{background-position:24% 76%!important}
+.photo-material.plastic{background-position:88% 72%!important}
+.photo-material.metal{background-position:72% 88%!important}
+.work{
+ min-height:330px!important;
+ background-image:linear-gradient(0deg,rgba(10,42,32,.82) 0%,rgba(10,42,32,.05) 62%),url('hero-reform-new.png')!important;
+}
+.w1{background-position:58% 52%!important}.w2{background-position:23% 65%!important}.w3{background-position:92% 48%!important}
+.ba-card{
+ min-height:390px!important;
+ background-image:linear-gradient(0deg,rgba(15,48,39,.12),rgba(15,48,39,.02)),url('hero-reform-new.png')!important;
+}
+.ba-before{background-position:18% 68%!important}.ba-after{background-position:67% 48%!important}
+.card{overflow:hidden}.card h3{font-size:20px}.works{gap:20px!important}
+@media(max-width:1300px){.hero{grid-template-columns:.84fr 1.16fr!important;gap:28px!important}.hero-gallery{min-height:520px!important}}
+@media(max-width:950px){.hero{grid-template-columns:1fr!important}.hero-gallery{min-height:62vw!important}.photo-material{height:180px!important}}
 </style>
 </head>
 <body>
