@@ -79,6 +79,36 @@ footer{background:#102f27;color:#dce9e3;padding:35px 7%;display:flex;justify-con
  .hero-gallery{min-height:62vw!important}
  .hero-copy h1{font-size:clamp(42px,10vw,62px)!important}
 }
+
+/* v7: show the complete hero artwork without cropping */
+.hero{
+  min-height:calc(100vh - 64px)!important;
+  grid-template-columns:minmax(500px,.88fr) minmax(760px,1.12fr)!important;
+  gap:42px!important;
+  padding:38px clamp(34px,5vw,90px)!important;
+}
+.hero-gallery{
+  width:100%!important;
+  min-height:0!important;
+  height:auto!important;
+  aspect-ratio:1536 / 1024!important;
+  background-image:url('hero-reform.png.png')!important;
+  background-size:contain!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  background-color:#f7f7f0!important;
+  border-radius:28px!important;
+  box-shadow:0 24px 60px rgba(24,50,43,.18)!important;
+}
+.hero-copy h1{font-size:clamp(48px,3.8vw,72px)!important}
+.hero-copy p{font-size:clamp(18px,1.25vw,23px)!important}
+@media(max-width:1300px){
+ .hero{grid-template-columns:.85fr 1.15fr!important;padding:32px!important}
+}
+@media(max-width:950px){
+ .hero{grid-template-columns:1fr!important;padding:28px 20px!important}
+ .hero-gallery{width:100%!important;aspect-ratio:1536/1024!important}
+}
 </style>
 </head>
 <body>
